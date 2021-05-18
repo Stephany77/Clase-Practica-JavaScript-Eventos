@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.miboton{
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: rgb(219, 163, 215);
+    
+}
+
+.miboton a:hover{
+    color: white;
+}
+
+.miboton.styleone::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 2px solid rgb(253, 48, 151);
+    transition: top,bottom,left,right, 500ms ease-in-out;
+}
+
+
+.miboton.styleone:hover::before{
+    top: -4px;
+    bottom: -4px;
+    left: -4px ;
+    right: -4px;
+}
+
+.miboton.styleTwo::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+   
+    background-color: rgb(255, 113, 243);
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    }
+
+.miboton.styleTwo:hover::before{ transform: scaleX(1); }
+
+.miboton.styleTwo { z-index: 1; }
+
+.miboton.styleThree::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    background-color: rgb(180, 24, 141);
+    border-radius: 40%;
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.5);
+    }
+.miboton.styleThree:hover::before{ transform:scale(0); }
+
+.miboton.styleThree{
+    z-index: 1;
+    overflow: hidden;
+    background-color: darkgray;
+    }
+
+    .miboton.styleTwo::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+        /* Se convierte en el background está una capa mas alejado del usuarios*/
+        background-color: darkgray;
+        transition: transform 300ms ease-in-out;
+        transform: scaleX(0);
+        transform-origin: left;
+        }
+    
+    .miboton.styleTwo:hover::before{ transform: scaleX(1); }
+    
+    .miboton.styleTwo { z-index: 1; }
+    .miboton.styleThree::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+        background-color: rgb(197, 24, 139);
+        border-radius: 40%;
+        transition: transform 500ms ease-in-out;
+        transform: scale(1.5);
+        }
+    .miboton.styleThree:hover::before{ transform:scale(0); }
+    
+    .miboton.styleThree{
+        z-index: 1;
+        overflow: hidden;
+        background-color: darkgray;
+        }
+    .miboton.styleFour::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            background-color: darkgray;
+            transition: transform 300ms ease-in-out;
+            transform: scaleX(0);
+            }
+    
+    .miboton.styleFour:hover::before{ transform: scaleX(1); }

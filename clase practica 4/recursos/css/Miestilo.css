@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+#logo {
+        text-align: center;
+}
+
+.imgen{ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(98, 3, 107);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+
+th, td {
+    width: 35%;
+    padding: 20px;
+    border: 3px solid rgb(190, 128, 190);
+}
+
+#tab{
+  text-align: center;
+    width: 60%;
+    height: 100%;
+    cursor: pointer;
+    display: inline;
+    width: 100%;
+}
+
+#titulo{
+    font-size: 30px;
+  
+}
+
+#logo h2{
+    font-family: 'Homemade Apple', cursive;
+    color: plum;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+ul li{
+    list-style: none;
+    margin: 2px 5px;
+    padding: 3px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: mintcream;
+}
+
+#nav{
+    background-color: rgb(166, 166, 230);
+    padding: 5px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#nav li{
+    display: inline;
+    width: 100%;
+
+  }
+
+ 
+
+  .Tabla{
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .Tabla h6{
+    font-size: 10px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+  
+  
+  #nav:hover{
+    background-color: rgb(238, 187, 236);
+}
+
+.show{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}

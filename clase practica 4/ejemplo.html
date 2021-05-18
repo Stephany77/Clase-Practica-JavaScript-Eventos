@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="recursos/js">
+
+    <p id="miparrafo"></p>
+
+    <ul id="mimenu">
+
+        <li class="btnStyle">menu 1</li>
+        <li class="btnStyle">menu 2</li>
+        <li class="btnStyle">menu 3</li>
+    </ul>
+
+    <script>
+        let miventana=window;
+
+
+        alert(miventana.innerWidth);
+
+        document.getElementById('miparrafo').innerHTML ='el tamaño de la pantalla es: ' + miventana.innerHeight + 
+        ' x ' + miventana.innerWidth;
+
+        let listamenu = document.getElementsByName('btnStyle');
+        //definiendo la funcionalidad de cada elemento//
+        /*
+        listamenu.forEach(function (elemento, indice, arreglo){
+            //accediendo a cada uno de los elemtos//
+            arreglo[indice].onmouseover = function (){
+                alert('hola');
+            };
+        });
+        */
+       for (let i=0; i < listamenu.length; i++ ){
+           listamenu[i].onmouseover = function(){
+               listamenu[i].style.backgroundColor = 'cyan';
+           }
+       };
+
+       listamenu[i].onmouseleave = function (){
+           listamenu[i].style.backgroundColor = 'white';
+       }
+    </script>
+    <p id="verp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur enim tempore officia ullam, ex nesciunt obcaecati? Similique sunt, <b>
+</b>  iste eum eligendi autem cum, dolorum culpa incidunt exercitationem magnam quos quidem.
+    </p>
+    
+</body>
+</html>
